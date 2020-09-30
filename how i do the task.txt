@@ -1,0 +1,6 @@
+first i use microsservice to do this task
+1- i made a  service called service-configuation to config database from github repository
+2- i made a service instance called persons service and made all apis endpint (get/put/delete/post)
+3- i made a service instance called frontline service that call --> person services 
+4- the service frontline call service person by ferign algorthim that cashed services ips
+5- i made a service discovy to store all servics instances physical addresses
