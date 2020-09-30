@@ -47,12 +47,19 @@ public class PersonControllers {
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 	
+	/** frontline/ call person to add new  person*/
 	@PostMapping("/frontline")
 	public ResponseEntity<Void> addPerson(@RequestBody Person person){
 		personService.addNewPerson(person);
 		return new ResponseEntity<>(HttpStatus.CREATED);
 	}
 	
+	/** frontline/{id} call person to update   person by id from person/id endpoint*/
+	@PutMapping("/frontline/{id}")
+	public ResponseEntity<Void> updatePerson(@RequestBody Person person ,@PathVariable int id){
+		personService.updatePerson(person, id);
+		return new ResponseEntity<>(HttpStatus.ACCEPTED);
+	}
 	
 	
 	
