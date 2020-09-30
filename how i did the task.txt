@@ -1,3 +1,11 @@
+APIS
+----
+PUT person==> http://127.0.0.1:8083/frontline/{id}
+POST person ==> http://127.0.0.1:8083/frontline/{id}
+DELETE person ==> http://127.0.0.1:8083/frontline/
+GET all person ==>http://127.0.0.1:8083/frontline/
+GET person ====> http://127.0.0.1:8083/frontline/{id}
+
 first i used microsservice to do this task
 1- i made a  service called service-configuation to config database from github repository
 2- i made a service instance called persons service and made all apis endpint (get/put/delete/post)
